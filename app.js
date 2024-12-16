@@ -10,7 +10,7 @@ const terminalOutput = document.getElementById("terminal-output");
 const wordCount = document.getElementById("word-count");
 const terminalInput = document.getElementById("terminal-input");
 const terminalFilePath = path.join(__dirname, "terminal.txt");
-const socket = new WebSocket("wss://githubsucks-1.onrender.com);
+const socket = new WebSocket("wss://githubsucks-1.onrender.com");
 socket.onmessage = (event) => {
     const data = JSON.parse(event.data);
     if (data.type === "text") {
