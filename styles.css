@@ -1,0 +1,118 @@
+/* Основные стили */
+body {
+    margin: 0;
+    padding: 0;
+    background: #000; /* Чёрный фон */
+    color: #00ff00; /* Ярко-зелёный текст */
+    font-family: 'Courier New', Courier, monospace; /* Шрифт */
+    height: 100vh; /* Полная высота экрана */
+    display: flex;
+    flex-direction: column; /* Вертикальная структура */
+}
+
+/* Панель статуса */
+.status-bar {
+    display: flex;
+    justify-content: space-between; /* Равномерное распределение */
+    align-items: center;
+    padding: 10px;
+    background: #000; /* Чёрный фон */
+    color: #00ff00; /* Ярко-зелёный текст */
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box; /* Учитываем padding */
+}
+
+/* Внутренние элементы панели статуса */
+.status-bar span {
+    flex: 1; /* Равные пропорции */
+    text-align: center; /* Центровка текста */
+}
+
+.author-info {
+    text-align: left; /* Левое выравнивание */
+    flex: 1;
+}
+
+.address-info {
+    text-align: right; /* Правое выравнивание */
+    flex: 2; /* Больше пространства для адреса */
+}
+
+/* Разделительная линия */
+hr {
+    border: 1px solid #00ff00; /* Ярко-зелёная линия */
+    margin: 0;
+}
+
+/* Терминал */
+.terminal {
+    flex: 1; /* Заполняет оставшееся пространство */
+    padding: 10px;
+    background: #000; /* Чёрный фон для терминала */
+    display: flex;
+    flex-direction: column; /* Элементы располагаются вертикально */
+    justify-content: flex-start; /* Элементы начинаются сверху */
+    overflow-y: auto; /* Скроллинг, если текст превышает высоту */
+    position: relative;
+}
+
+/* Вывод терминала */
+#terminal-output {
+    white-space: pre-wrap; /* Сохраняем пробелы и переносы строк */
+    flex: 1; /* Заполняет оставшееся пространство терминала */
+    font-size: 16px;
+    line-height: 1.5;
+    color: #00ff00;
+}
+
+#cursor {
+    background: #00ff00;
+    width: 1px;
+    height: 20px;
+    animation: blink 1s steps(2, start) infinite;
+    position: absolute;
+    top: 20px; /* Сразу после данных */
+    left: 10px;
+}
+
+let cursorPosition = 0; // Обновляется в реальном времени
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Поле ввода текста */
+#terminal-input {
+    width: 100%; /* Полная ширина */
+    background: #000; /* Чёрный фон */
+    color: #00ff00; /* Ярко-зелёный текст */
+    border: none; /* Без границ */
+    outline: none; /* Убираем подсветку */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+}
+
+
+@media (max-width: 768px) {
+    .status-bar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .author-info {
+        text-align: left;
+        flex: 1;
+    }
+
+    .address-info {
+        text-align: right;
+        flex: 1;
+    }
+
+    .balance-info, .words-info {
+        display: none; /* Скрываем баланс и слова на телефонах */
+    }
+}

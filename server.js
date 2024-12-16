@@ -6,13 +6,15 @@ const path = require("path");
 const app = express();
 const httpPort = 3000; // HTTP порт
 const wsPort = 3001;  // WebSocket порт
+const socket = new WebSocket("wss://githubsucks-1.onrender.com");
+
 
 // Хостинг статики
 app.use(express.static(path.join(__dirname, "public")));
 
 // Логика разделения режима
-app.get("/%fuckoffbitch%%", (req, res) => {
-    res.sendFile(path.join(__dirname, "public", "%fuckoffbitch%%.html"));
+app.get("/admin", (req, res) => {
+    res.sendFile(path.join(__dirname, "public", "admin.html"));
 });
 
 app.get("/", (req, res) => {

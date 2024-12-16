@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="status-bar">
+        <span class="author-info">Author: Unknown</span>
+        <span class="balance-info">Balance: 0 BTC</span>
+        <span class="words-info">Words: <span id="word-count">0</span></span>
+        <span class="address-info">Address: bc1qk6pfeyurmjwxpvcm6d7kxt900wpg484r4anx40</span>
+    </div>
+    <hr>
+    <div class="terminal">
+        <pre id="terminal-output"></pre>
+        <span id="cursor"></span>
+    </div>
+    <audio autoplay loop>
+        <source src="terminal.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <script src="app.js"></script>
+</body>
+</html>

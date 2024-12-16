@@ -1,0 +1,120 @@
+==> Cloning from https://github.com/githabium/githubsucks
+==> Checking out commit c2d0335419a001b03ff01061cc4aef6a31d11855 in branch main
+==> Using Node.js version 22.11.0 (default)
+==> Docs on specifying a Node.js version: https://render.com/docs/node-version
+==> Using Bun version 1.1.0 (default)
+==> Docs on specifying a bun version: https://render.com/docs/bun-version
+==> Running build command 'yarn install'...
+yarn install v1.22.22
+warning package.json: No license field
+info No lockfile found.
+warning terminal-server@1.0.0: No license field
+[1/4] Resolving packages...
+[2/4] Fetching packages...
+[3/4] Linking dependencies...
+[4/4] Building fresh packages...
+success Saved lockfile.
+Done in 1.20s.
+==> Uploading build...
+==> Build uploaded in 7s
+==> Build successful 🎉
+==> Deploying...
+==> Running 'node server.js'
+HTTP сервер запущен: http://localhost:3000
+Error: ENOENT: no such file or directory, stat '/opt/render/project/src/public/index.html'
+==> New primary port detected: 3000. Restarting deploy to update network configuration...
+==> Docs on specifying a port: https://render.com/docs/web-services#port-binding
+==> Running 'node server.js'
+HTTP сервер запущен: http://localhost:3000
+Error: ENOENT: no such file or directory, stat '/opt/render/project/src/public/index.html'
+==> Your service is live 🎉
+Error: ENOENT: no such file or directory, stat '/opt/render/project/src/public/index.html'
+==> Detected a new open port HTTP:3000
+==> Detected a new open port HTTP:3000
+
+блин чет не получается ссылку получить, а можно прост как то на прямую на рендер залить эти 2 файла, не через гит хабчик?
+
+или ...
+
+
+
+githubsucks-2
+Dashboard
+githubsucks-2
+
+Events
+
+    Settings
+
+Monitor
+
+Logs
+
+    Metrics
+
+Manage
+
+Disks
+Environment
+Shell
+Previews
+Jobs
+Scaling
+Docs
+Changelog
+Community
+Feedback
+Invite a friend
+Render Status
+Web Service
+githubsucks-2
+Node
+Free
+Upgrade your instance
+githabium / githubsucks
+main
+https://githubsucks-2.onrender.com
+Your free instance will spin down with inactivity, which can delay requests by 50 seconds or more.
+Upgrade now
+December 15, 2024 at 3:58 AMcanceled
+c2d0335Sniffed coce with MJ
+Search
+==> Cloning from https://github.com/githabium/githubsucks
+==> Checking out commit c2d0335419a001b03ff01061cc4aef6a31d11855 in branch main
+==> Downloading cache...
+Deploy cancelled
+==> Transferred 52MB in 7s. Extraction took 1s.
+0 services selected:
+
+Вот эта вот ссылка то что вверху и есть нам нужная ссылка?:
+
+https://githubsucks-2.onrender.com -? 
+
+Тип все успешно прошло? 
+
+
+
+////
+
+также тут:
+
+Custom Domains
+Your service is always available at https://githubsucks-2.onrender.com
+You can also point custom domains you own to this service. See DNS configuration instructions.
+
+    terminal.com
+    redirects to www.terminal.com
+
+DNS update needed
+Add an ANAME or ALIAS record pointing to
+githubsucks-2.onrender.com
+If your DNS provider does not support ANAME or ALIAS records, use an A record pointing to
+216.24.57.1
+DNS configuration instructions
+www.terminal.com
+DNS update needed
+Add a CNAME record for www pointing to
+githubsucks-2.onrender.com
+DNS configuration instructions
+
+Что нужно сделать чтобы "ебнуть" кастум Домейн?
